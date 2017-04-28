@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_item"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.thanhit.todoapp.CreateItemActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Name"
+                    android:textSize="20sp"
+                    android:textColor="#503F50"
+                    />
+
+                <EditText
+                    android:id="@+id/edtTaskName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date"
+                    android:textSize="20sp"
+                    android:textColor="#503F50"/>
+
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Note"
+                    android:textSize="20sp"
+                    android:textColor="#503F50"/>
+
+                <EditText
+                    android:id="@+id/edtTaskNote"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Priority Level"
+                    android:textSize="20sp"
+                    android:textColor="#503F50"
+                    />
+
+                <Spinner
+                    android:id="@+id/spPriority"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:minHeight="60dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="20sp"
+                    android:textColor="#503F50"/>
+
+                <Spinner
+                    android:id="@+id/spStatus"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

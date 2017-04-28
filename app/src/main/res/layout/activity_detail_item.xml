@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.thanhit.todoapp.DetailItemActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="60dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#5e375e"
+                    android:text="Task Name"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    android:textColor="#5e375e"
+                    android:text="Task Name"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="60dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#5e375e"
+                    android:text="Due Date"/>
+
+                <TextView
+                    android:id="@+id/txtDuedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    android:textColor="#5e375e"
+                    android:text="Task Name"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="60dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#5e375e"
+                    android:text="Task Notes"/>
+
+                <TextView
+                    android:id="@+id/txtTakeNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    android:textColor="#5e375e"
+                    android:text="Task Name"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="60dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#5e375e"
+                    android:text="Priority"/>
+
+                <TextView
+                    android:id="@+id/txtPriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    android:textColor="#5e375e"
+                    android:text="Task Name"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="60dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#5e375e"
+                    android:text="Status"/>
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#5e375e"
+                    android:gravity="right"
+                    android:text="Task Name"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="3"
+                    android:background="#656065"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
